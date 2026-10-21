@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title shown in the browser tab -->
+    <title>About Aishah</title>
+</head>
+<body>
+
+    <!-- Heading with my name -->
+    <h1>Hallooo, I'm Aishah</h1>
+
+    <!-- Paragraph about hobbies, with bold and italic text -->
+    <p>
+        In my free time, I love <strong>hiking</strong> because I enjoy being in nature
+        and reaching the top of a mountain or waterfall.<br>
+        I also like <em>watching movies</em> to relax, and <strong>swimming</strong>
+        to stay active and have fun.
+    </p>
+
+    <!-- Ordered list of favourite movies -->
+    <h2>My Favourite Movies</h2>
+    <ol>
+        <li>Fabricated City</li>
+        <li>Zombi Kampung Pisang</li>
+        <li>World War Z</li>
+    </ol>
+
+    <!-- Unordered list of top 3 hobbies -->
+    <h2>My Top 3 Hobbies</h2>
+    <ul>
+        <li>Hiking</li>
+        <li>Watching Movies</li>
+        <li>Swimming</li>
+    </ul>
+
+    <!-- Link to a hobby-related website -->
+    <p>Visit <a href="https://thehikinglife.com/hiking-and-backpacking-skills/hiking-techniques/" target="_blank">this hiking tips website</a> to learn hiking techniques.</p>
+
+    <!-- Images related to my hobby -->
+    <img src="hiking.jpeg" alt="Lata Kijang Waterfall" width="300">
+    <img src="hiking2.jpeg" alt="Myself at the top of Lata Kijang" width="300">
+
+</body>
+</html>
+    
