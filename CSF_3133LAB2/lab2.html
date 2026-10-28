@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Personal Profile Page</title>
+    </head>
+    <body>
+
+        <!--Semantic header-->
+        <header>
+            <h1>Welcome to My Personal Profile</h1>
+        </header>
+
+        <!--Semantic Navigation Bar-->
+        <nav>
+            <a href="#profile-info">Profile Info</a> |
+            <a href="#feedback-form">Contact Form</a>
+        </nav>
+
+        <!--Semantic section for profile-->
+        <section id="profile-info">
+            <!--Semantic article-->
+            <article>
+                <h2>About me</h2>
+                <p>Heloo! Im Aishah and this is my webpage</p>
+
+                <!--table with at least 3 rows and 3 columns-->
+                <table border="1">
+                    <tr>
+                        <th>Information</th>
+                        <th>Details</th>
+                    </tr>
+
+                    <tr>
+                        <td>Name</td>
+                        <td>Nur Aishah binti Omar</td>
+                    </tr>
+                    <td>Age</td>
+                    <td>22</td>
+
+                    <tr>
+                        <td>Course</td>
+                        <td>Computer Science</td>
+                    
+                    </tr>
+
+                    <tr>
+                        <td>Hobbies</td>
+                        <td>Swimming</td>
+                    
+                    </tr>
+                </table>
+            </article>
+        </section>
+
+      <!--semantic section for form-->  
+    <section id="feedback-form">
+        <h2>User Information Form</h2>
+        
+        <!-- form with text input, email, radio buttons, checkboxes, and submit -->
+        <form action="#" method="post">
+            
+            <!-- Text Input (Name) -->
+            <label for="username">Name:</label><br>
+            <input type="text" id="username" name="username" required><br><br>
+
+            <!-- Email Input -->
+            <label for="useremail">Email:</label><br>
+            <input type="email" id="useremail" name="useremail" required><br><br>
+
+            <!-- Radio Buttons (Gender) -->
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <!-- Checkboxes (Hobbies) -->
+            <label>Favorite Hobbies:</label><br>
+            <input type="checkbox" id="hobby1" name="hobbies" value="reading">
+            <label for="hobby1">Reading</label><br>
+            <input type="checkbox" id="hobby2" name="hobbies" value="gaming">
+            <label for="hobby2">Gaming</label><br>
+            <input type="checkbox" id="hobby3" name="hobbies" value="sports">
+            <label for="hobby3">Sports</label><br><br>
+
+            <!-- Submit Button -->
+            <input type="submit" value="Submit Information">
+            
+        </form>
+    </section>
+
+    <!-- Semantic Footer -->
+    <footer>
+        <p>Copyright © 2026 My Web Page</p>
+    </footer>
+    </body>
+</html>

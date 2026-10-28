@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML Practice</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Welcome to My HTML Practice Page</h1>
+            <p>Learning tables, forms and semantic structure</p>
+        </header>
+
+        <!--navigation: A bar for page links-->
+        <nav>
+            <a href="#table-section">Data Table</a>
+            <a href="#form-section">Registration Form</a>
+        </nav>
+
+        <!--Section&articles: Grouping the content logicall-->
+        <section id="table-section">
+            <article>
+        <h2> Section2.3: Student Table</h2>
+        <!--this create a table with 3 rows and 3 column-->
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>John Doe</td>
+                <td>Mathematics</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Jane Smith</td>
+                <td>Science</td>
+                <td>B++</td>
+            </tr>
+        </table>
+    </article>
+</section>
+
+
+    <!--Section&Article:Grouping the form content logically-->
+    <section id="form-section">
+        <article>
+        <h2>Section 2.4: Registration Form</h2>
+        <form action = "#" method "post">
+
+            <!-- Text fields for name-->
+             <label for="fname">First Name</label><br>
+             <input type="text" id="fname" name="firstname"><br><br>
+
+            <label for="lname">Last Name</label><br>
+             <input type="text" id="fname" name="lastname"><br><br>
+
+             <!--Radio button for selecting one gender option-->
+             <label for="gender">Gender: </label><br>
+             <input type="radio" id="male" name="gender" value="male">
+             <label for="male">Male</label><br>
+             <input type="radio" id="female" name="gender" value=" female">
+             <label for="female">Female</label><br><br>
+
+             <!--Checkboxes for selecting multiple hobbies-->
+             <label for="hobby">Select your hobbies: </label><br>
+             <input type="checkbox" id="hobby1" name="hobby1" value="reading">
+             <label for="hobby1">Reading</label><br>
+             <input type="checkbox" id="hobby2" name="hobby2" value="gaming">
+             <label for="hobby2">gaming</label><br>
+
+             <!--Dropdown menu for picking a country-->
+             <label for="Country">Choose a country: </label>
+             <select id="Country" name="Country">
+                <option value="usa">USA</option>
+                <option value="canada">CANADA</option>
+                <option value="uk">UK</option>
+             </select><br><br>
+
+             <!--button to click submit-->
+             <input type="submit" value="Submit"
+            
+
+        </form>
+    </article>
+</section>
+
+<!--footer: the bottom details or copyright area-->
+<footer>
+    <p>Copyright &copy; 2026 My Web Page Practice</p>
+</footer>
+
+    </body>
+</html>
