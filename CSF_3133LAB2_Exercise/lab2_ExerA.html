@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Faculty Tech Hackhaton 2026</title>
+    </head>
+    <body>
+
+        <!-- main header-->
+         <header>
+            <h1>Faculty Tech Hackhaton</h1>
+            <p>Code the future: Innovate, Build and Show your Skills!</p>
+         </header>
+
+         <!--navigation menu with internal anchor links-->
+         <nav>
+            <a href="#schedule-info">Event Schedule</a> |
+            <a href="#register-form">Register Form</a> |
+            <a href="#about-info">About The Event</a>
+         </nav>
+
+         <!--Section about event-->
+         <section id="about">
+            <h2> About the event</h2>
+
+             <article>
+                <h3>Keynote Presentation: AI in Practice</h3>
+                <p>Join our industry guest speaker as they explore the real-world applications of Generative AI and how modern tech teams leverage automated pipelines to deploy software at scale.</p>
+            </article>
+
+            <article>
+                <h3>Main Hackhaton Challenge</h3>
+                <p>Teams of 3 peopke will compete in a competition involving 
+                     design, develop and present a prototype software solving nowdays 
+                     rising issues.
+                </p>
+            </article>
+         </section>
+
+         <!--Section Event Schedule Table-->
+         <section id="Schedule">
+            <h2>Event Schedule</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Venue</th>
+                        <th>Person in charge</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8.30am - 9.00am</td>
+                        <td>Participant Registration</td>
+                        <td>Lobby FSKM</td>
+                        <td>Registration Form</td>
+                    </tr>
+
+                    <tr>
+                        <td>9.00am - 10.00am</td>
+                        <td>Opening Ceremony &amp; Keynote</td>
+                        <td rowspan="2">Auditorium 1</td>
+                        <td>Dr Ahmad</td>
+                    </tr>
+
+                     <tr>
+                        <td>10.00am - 12.30pm</td>
+                        <td>Briefing for Hackhaton &amp; Coding Commences</td>
+                        <td>Facilitator team</td>
+                    </tr>
+
+                    <tr>
+                        <td>12.30pm - 2.00pm</td>
+                        <td colspan="3"> Lunch Break &amp; Networking Session</td>
+                    </tr>
+
+                    <tr>
+                        <td>2.00pm - 4.00 pm</td>
+                        <td>Discussion &amp; Coding session </td>
+                        <td rowspan="2">Makmal Pengaturcaraan 3</td>
+                        <td>Facilitator team</td>
+                    </tr>
+                        <td>4.00pm - 5.00pm</td>
+                        <td>Submission session</td>
+                        <td>Dr Ahmad</td>                  
+                </tbody>
+            </table>
+         </section>
+
+        <!-- section registration form-->
+         <section id="register">
+            <h2>Registration form</h2>
+            <form action="register.html" method="post">
+            
+            <!-- text input for linked labels -->
+            <p>
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required>
+            </p>
+
+            <p>
+                <label for="matric">Matric Number:</label><br>
+                <input type="text" id="matric" name="matric" required>
+            </p>
+
+            <p>
+                <label for="e-mail">Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+            <p>
+            <!--radio button-->
+            <label>Year:</label><br>
+            <input type="radio" id="year 1" name="Year" value="year 1">
+            <label for="year 1">Year 1</label><br>
+         
+            <input type="radio" id="year 2" name="Year" value="year 2">
+            <label for="year 2">Year 2</label><br>
+            
+            <input type="radio" id="year 3" name="Year" value="year 3">
+            <label for="year 3">Year 3</label><br>
+
+            <input type="radio" id="year 4" name="Year" value="year 4">
+            <label for="year 4">Year 4</label><br>
+            </p>
+
+             <!--checkboxes-->
+            <p> 
+                <label>Select Sessions to Join:</label><br>
+                <input type="checkbox" id="session1" name="sessions" value="Keynote">
+                <label for="session1">Keynote Session</label><br>
+                
+                <input type="checkbox" id="session2" name="sessions" value="Hackathon">
+                <label for="session2">Main Hackathon Challenge</label><br>
+                
+                <input type="checkbox" id="session3" name="sessions" value="Mentoring">
+                <label for="session3">Discussion session</label>
+            </p>
+
+            <p>
+                <label for="programme">Academic Programme:</label><br>
+                <select id="programme" name="programme">
+                    <option value="SE">Bachelor of Software Engineering</option>
+                    <option value="IM">Bachelor of Informatic Maritime</option>
+                    <option value="MC">Bachelor of Mobile Computing</option>
+                    <option value="CS">Bachelor of Cyber Security</option>
+                </select>
+            </p>
+            
+             <p>
+                <input type="submit" value="Submit Registration">
+            </p>
+
+            </form>
+         </section>
+
+         <!--footer-->
+         <footer>
+            <p>Organised by the Faculty of Computer Science and Mathematics</p>
+            <p>&copy; 2026 All Rights Reserved.</p>
+                </footer>
+    </body>
+</html>
