@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Interactive Contact Form & Calculator</title>
+        <style>
+            /* 1. This applies the gradient to the entire page and removes browser gaps */
+            body {
+                background: linear-gradient(135deg, #eef1f3, #003064b1);
+                min-height: 100vh;
+                margin: 100;
+                font-family: Arial, sans-serif;
+                color: #222;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!--Header section-->
+        <div>
+            <h1>Welcome to Our Interactive Portal</h1>
+            <span>Connecting you with smart solutions and feedback tools.</span>
+        </div>
+
+        <hr>
+
+        <!--content section-->
+        <div>
+            <!--contact form-->
+            <form>
+                <h3> Contact Us</h3>
+
+                <label for="email">Email Address:</label>
+                <input type ="email" id="email" name="email" required>
+                <br><br>
+
+                <label for="contact-date">Preferred Contact Date:</label>
+                <input type="date" id="contact-date" name="contactDate">
+                <br><br>
+
+                <label for="satisfication">Satisfication Level:</label>
+                <input type="range" id="satisfication" name="satisfication" min="1" max="10" value="5">
+                <br><br>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+            
+            <br><hr><br>
+
+            <!--third <div> for the inline calculator-->
+                <div>
+                    <h3>Inline Addition Calculator</h3>
+                    <form oninput="result.value = parseInt(num1.value||0) + parseInt(num2.value||0)">
+                        <label for="num1">Number 1:</label>
+                        <input type="number" id="num1" name="num1" value="0">
+
+                        <span>+</span>
+
+                        <label for="num2">Number 2:</label>
+                        <input type="number" id="num2" name="num2" value="0">
+
+                        <span>=</span>
+                        <output name="result" for="num1 num2">0</output>
+                    </form>
+                </div>
+        </div>
+
+        <hr>
+
+        <div>
+            <p>Contact info: Naishah720@gmail.com | Phone: (+06)01154034395</p>
+            <p>&copy; 2026 Interactive Portal Lab. All rights reserved.</p>
+        </div>
+
+    </body>
+</html>
