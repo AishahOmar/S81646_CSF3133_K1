@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Booking</title>
+</head>
+<body>
+
+<!-- header sec -->
+<div id="header">
+    <h1>e-Ticket <span>Your Campus Cinema</span></h1>
+</div>
+
+<!-- main content sec -->
+<div id="content">
+    <h2>Book Your Ticket</h2>
+    <p>Promotions: Tickets less than RM10 for students &amp; staff!</p>
+
+    <!-- form sec -->
+    <form action="booking.php" oninput="total.value = Number(adult.value) + Number(child.value); price.value = (Number(adult.value) * 12) + (Number(child.value) * 8);">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <label for="date">Show Date:</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="movie">Movie:</label>
+        <input id="movie" name="movie" list="movies"><br><br>
+        <datalist id="movies">
+            <option value="The Great Flood">
+            <option value="Colony">
+            <option value="Finding Nemo">
+            <option value="Cars">
+        </datalist>
+
+        <label for="adult">Adult tickets (RM 12):</label>
+        <input type="number" id="adult" name="adult" value="0" min="0"><br><br>
+
+        <label for="child">Child tickets (RM 8):</label>
+        <input type="number" id="child" name="child" value="0" min="0"><br><br>
+
+        <label for="rating">Rate our service:</label>
+        <input type="range" id="rating" name="rating" min="1" max="5"><br><br>
+
+        <!-- output -->
+        Total tickets: <output name="total" for="adult child">0</output><br>
+        Total price: RM <output name="price" for="adult child">0</output><br><br>
+
+        <input type="submit" value="Book now">
+    </form>
+</div>
+
+<div id="sidebar">
+    <h3>Now Showing</h3>
+    <ul>
+        <li>
+            <strong>Cars</strong> - <span>PG-13</span> | <a href="https://www.youtube.com/watch?v=XszNWHhpaTc">Watch Trailer</a><br><br>
+            <strong>Finding Nemo</strong> - <span>PG-13</span> | <a href="https://www.youtube.com/watch?v=FwZB_tQVaMs">Watch Trailer</a><br><br>
+            <strong>Colony</strong> - <span>PG-18</span> | <a href="https://www.youtube.com/watch?v=RjdGmIUbYIQ">Watch Trailer</a><br><br>
+            <strong>The Great Flood</strong> - <span>PG-16</span> | <a href="https://www.youtube.com/watch?v=ErWfGyLp5h8">Watch Trailer</a><br><br>
+        </li>
+    </ul>
+</div>
+
+<div id="footer">
+    <p>&copy; 2026 CineKampus. All rights reserved.</p>
+    <p>e-Ticket&reg; &amp; Campus Cinema &lt; RM10 every Tuesday</p>
+</div>
+
+</body>
+</html>
