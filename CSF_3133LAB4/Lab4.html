@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Lab 4 Exercise</title>
+    <!-- Linking external CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal CSS style as required by instructions -->
+    <style type="text/css">
+        h1 {
+            text-decoration: overline;
+        }
+        h2 {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Lab 4 Webpage</h1>
+        <p>Name: Nur Aishah binti Omar | Matric No: S81646</p>
+    </header>
+
+    <!-- Navigation Bar using unordered list -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#video-section">Video</a></li>
+            <li><a href="#form-section">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Layout Elements -->
+    <section id="home">
+        <h2>Introduction</h2>
+        <article>
+            <h3>CSS Part 1 Basics</h3>
+            <p>
+                In this lab 4 exercise, we learn about semantic elements in HTML5 like header, nav, section,
+                 article, and footer. We also learn how to style them using internal style sheets and external stylesheets together.
+            </p>
+            <p>Click here to visit our university site: <a href="https://umt.edu.my" target="_blank" id="umt-link">UMT Website</a></p>
+        </article>
+    </section>
+
+    <section id="video-section">
+        <h2>Multimedia Video</h2>
+        <p>Below is the video playing inside the webpage layout:</p>
+        
+        <video width="400" height="300" controls>
+            <source src="umt.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p><i>Figure 1: UMT video clip display</i></p>
+    </section>
+
+    <section id="form-section">
+        <h2>Student Information Form</h2>
+        
+        <!-- Interactive Form Fields -->
+        <form action="#" method="POST">
+            <p>
+                <label>Name: </label>
+                <input type="text" name="student_name" required>
+            </p>
+            
+            <p>
+                <label>Email: </label>
+                <input type="email" name="student_email" required>
+            </p>
+            
+            <p>
+                <label>Gender: </label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </p>
+            
+            <p>
+                <label>Favorite Hobbies: </label>
+                <input type="checkbox" id="hobby1" name="hobbies" value="Reading">
+                <label for="hobby1">Reading</label>
+                <input type="checkbox" id="hobby2" name="hobbies" value="Swimming">
+                <label for="hobby2">Sports</label>
+                <input type="checkbox" id="hobby3" name="hobbies" value="Cooking">
+                <label for="hobby3">Coding</label>
+            </p>
+            
+            <p>
+                <input type="submit" value="Submit Button">
+            </p>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Copyright Reserved. UMT Lab Module 4 Assignment.</p>
+    </footer>
+
+</body>
+</html>

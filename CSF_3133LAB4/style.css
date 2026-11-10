@@ -1,0 +1,112 @@
+/* Basic page properties */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 10px;
+    padding: 10px;
+}
+
+header {
+    background-color: rgb(108, 108, 233);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Simple Navigation Bar matching the manual style */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+nav ul li {
+    display: inline-block; /* puts them in a row side-by-side */
+}
+
+nav ul li a {
+    display: block;
+    font-weight: bold;
+    color: white;
+    width: 120px;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* Link interactive states styling */
+nav ul li a:link {
+    color: white;
+}
+
+nav ul li a:visited {
+    color: lightgray;
+}
+
+nav ul li a:hover {
+    background-color: black;
+    color: yellow;
+}
+
+nav ul li a:active {
+    background-color: red;
+}
+
+/* Text decoration states for the external link */
+#umt-link:link {
+    color: blue;
+    text-decoration: underline;
+}
+
+#umt-link:visited {
+    color: purple;
+}
+
+#umt-link:hover {
+    text-decoration: line-through;
+    color: red;
+}
+
+#umt-link:active {
+    text-decoration: overline;
+}
+
+/* Sections block design */
+section {
+    background-color: white;
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+h3 {
+    text-decoration: line-through;
+}
+
+video {
+    border: 2px dashed blue;
+}
+
+/* Form structure simple look */
+form {
+    border: 1px solid gray;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+input[type="text"], input[type="email"] {
+    width: 250px;
+    padding: 5px;
+}
+
+/* Footer style element */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
