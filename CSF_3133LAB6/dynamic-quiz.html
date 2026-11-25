@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-box">
+        <!-- Header -->
+        <header>
+            <h1>Web Design Quiz</h1>
+            <p>Answer each question before the timer reaches 0!</p>
+        </header>
+
+        <!-- Section for questions, options, and timer -->
+        <section id="quiz-area">
+            <p id="timer">Time Left: 15 seconds</p>
+            <h3 id="question">Question will appear here</h3>
+            <div id="options"></div>
+        </section>
+
+        <!-- Section for feedback -->
+        <section id="feedback-area">
+            <p id="feedback"></p>
+        </section>
+
+        <!-- Buttons to submit and navigate -->
+        <button id="submit-btn" onclick="checkAnswer()">Submit Answer</button>
+        <button id="next-btn" onclick="nextQuestion()" style="display:none;">Next Question</button>
+
+        <!-- Footer for score -->
+        <footer>
+            <p id="score">Score: 0</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
